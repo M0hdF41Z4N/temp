@@ -18,6 +18,12 @@
   
       <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
       <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    <a href={% url 'create' %}>Create Post</a>
+{% for post in allposts %}
+{{ post.title }}
+<a href={% url 'view' post.slug %}>View Post</a>
+{% endfor %}
+   
     </div>
   </div>
 

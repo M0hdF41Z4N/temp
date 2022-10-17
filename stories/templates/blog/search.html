@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+
+<title>Stories</title>
+
+{% endblock title %}
+
+{% block body %}
+<h1> Search Stories</h1>
+
+<h1> 
+{{ post.title }}
+</h1>
+<p>
+{{ post.description }}
+</p>
+<small>{{ post.timeStamp }}</small>
+{{ post.author }}
+
+
+{% endblock body %}
